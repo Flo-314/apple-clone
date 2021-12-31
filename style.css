@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexAlign{
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+#home h1{
+    font-size: 5rem;
+}
+#home h2{
+    font-size: 3.5rem;
+}
+#home h3{
+    font-size: 1.9rem;
+}
+#home ul{
+    gap: 10px;
+}
+img{
+    max-width: 50px;
+    max-height: 50px;
+}
+main{
+    max-width: 1440px;
+    height: 100%;
+}
+
+#home{
+    background: url(images/home.jpg)
+    100% 100% no-repeat;
+    
+}
+
+#promos img{
+    max-width: 364px;
+    max-height: 200px;
+}
