@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: 0;
     list-style: none;
+    font-family: "Heebo";
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.gray{
+    color: #6E6E6E;
+}
+.smallFont{
+    font-size: 0.65rem;
+}
+a{
+    color: #08c;
+    margin: 0px;
 }
 .flex{
     display: flex;
@@ -22,38 +34,98 @@ body{
     justify-content: center;
     align-items: center;
 }
+main{
+    display: grid;
+    max-width: 1440px;
+    height: 100%;
+    grid-template-areas: 
+    "home"
+    "promos";
+}
+#promos{
+    grid-area: promos;
+    max-width: 1500px;
+
+}
+#promos ul{
+    gap: 1px;
+}
 #home{
-    padding-top: 5em;
-    padding-bottom: 5em;
+    grid-area: home;
+    background: url(images/home.jpg)
+    100% 100% no-repeat;
+    padding: 6em 2em 6em 2em;
+    max-height: 640px;
+}
+#home nav{
+    flex: 1;
+border:  0.5px solid rgb(99, 99, 99);
+   background-color: #707070;
+   background-image:
+   linear-gradient(
+     to top,
+    #6d6d6d 50%,
+ rgb(119, 119, 119) 50%
+   );
+   margin-bottom: 7em ;
+
+}
+
+#home nav ul li{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-shadow: 0.5px 0.5px 1px black;
+    padding: 0.5em 2em 0.5em 2em;
+    border-left: 1px #4e4e4e solid;
+    border-right: 1px #4e4e4e solid;
+}
+ nav img{
+    max-width: 25px;
+    max-height:25px;
+}
+#propaganda{
+    text-align: center;
+    padding-bottom: 7em;
+    max-width: 900px;
 }
 #home h1{
-    font-size: 5rem;
+    font-size: 3.75rem;
 }
 #home h2{
-    font-size: 3.5rem;
+    font-size: 2rem;
+    font-weight: 200;
 }
 #home h3{
-    font-size: 1.9rem;
+    font-size: 1.65em;
+
 }
-#home ul{
-    gap: 10px;
+h1,h2,h3{
+    font-weight: 100;
+    color: white;
+    margin: 0px;
 }
+
 img{
     max-width: 50px;
     max-height: 50px;
 }
-main{
-    max-width: 1440px;
-    height: 100%;
-}
 
-#home{
-    background: url(images/home.jpg)
-    100% 100% no-repeat;
-    
-}
 
 #promos img{
-    max-width: 364px;
+    max-width: 360px;
     max-height: 200px;
+}
+footer{
+    padding: 1em;
+}
+footer div{
+    padding: 1em;
+}
+footer div p{
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+footer ul li{
+    padding: 0 0.2em 0 0.2em;
 }
