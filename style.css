@@ -70,13 +70,20 @@ border:  0.5px solid rgb(99, 99, 99);
    margin-bottom: 7em ;
 
 }
-
+#home nav input{
+    background:    linear-gradient(
+        to top,
+       #838282 50%,
+    rgb(133, 133, 133) 50%
+      );;
+      border-radius: 1em;
+}
 #home nav ul li{
     color: white;
     font-weight: 500;
     font-size: 1rem;
     text-shadow: 0.5px 0.5px 1px black;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.3em 2em 0.3em 2em;
     border-left: 1px #4e4e4e solid;
     border-right: 1px #4e4e4e solid;
 }
